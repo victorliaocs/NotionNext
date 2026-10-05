@@ -6,7 +6,7 @@ module.exports = {
   CONTACT_EMAIL:
     (process.env.NEXT_PUBLIC_CONTACT_EMAIL &&
       btoa(
-        unescape(encodeURIComponent(process.env.NEXT_PUBLIC_CONTACT_EMAIL))
+        unescape(encodeURIComponent(process.env.NEXT_PUBLIC_CONTACT_EMAIL || '570634978@qq.com'))
       )) ||
     '', // 邮箱地址 例如mail@tangly1024.com
   CONTACT_WEIBO: process.env.NEXT_PUBLIC_CONTACT_WEIBO || '', // 你的微博个人主页
